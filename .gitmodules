@@ -1,0 +1,3 @@
+[submodule "grade-school-math"]
+	path = grade-school-math
+	url = https://github.com/openai/grade-school-math.git

@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "math"
+version = "0.1.0"
+description = ""
+authors = ["dylan-slack <dslack@uci.edu>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+transformers = "^4.27.3"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
