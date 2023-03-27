@@ -1,9 +1,13 @@
 [tool.poetry]
-name = "math"
+name = "Math"
 version = "0.1.0"
 description = ""
 authors = ["dylan-slack <dslack@uci.edu>"]
 readme = "README.md"
+packages = [
+    { include = "Math" }
+]
+
 
 [tool.poetry.dependencies]
 python = "^3.9"
