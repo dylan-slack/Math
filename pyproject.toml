@@ -5,7 +5,7 @@ description = ""
 authors = ["dylan-slack <dslack@uci.edu>"]
 readme = "README.md"
 packages = [
-    { include = "Math" }
+    { include = "." }
 ]
 
 
