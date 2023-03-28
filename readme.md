@@ -11,7 +11,7 @@ torch = "^2.0.0"
 scikit-learn = "^1.2.2"
 ```
 
-Training Command
+Training Command. I ran on 8x 48GB NVIDIA RTX A6000.
 
 ```shell
 python train.py -m "google/flan-t5-large" --train --overwrite-cache -b 2 --accum 4
