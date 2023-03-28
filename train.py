@@ -55,6 +55,7 @@ def train(train_data, test_data, args):
         num_train_epochs=args.epochs,
         per_device_train_batch_size=args.train_batch_size,
         per_device_eval_batch_size=args.train_batch_size,
+        gradient_accumulation_steps=args.accum,
         eval_accumulation_steps=1,
     )
     acc_metric = datasets.load_metric("accuracy_metric.py")
@@ -110,6 +111,7 @@ if __name__ == "__main__":
     parser.add_argument('-t', '--train', action="store_true")
     parser.add_argument('-b', '--train_batch_size', type=int, default=16)
     parser.add_argument('-d', '--debug', action="store_true")
+    parser.add_argument('--accum', type=int, default=4)
     parser.add_argument('--overwrite-cache', action="store_true")
     parser.add_argument('--max-source-length', type=int, default=1024)
     parser.add_argument('--max-target-length', type=int, default=256)
