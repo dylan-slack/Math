@@ -23,7 +23,7 @@ After 500 training steps, this model scored 82.2% on the test data.
 
 ### HuggingFace
 
-Please find the model on the huggingface hub [here](https://huggingface.co/dslack/Grade-School-Math-Flan-T5-Large).
+Please find the model on the huggingface hub [here](https://huggingface.co/dslack/GSM8K-Flan-T5-Large).
 
 ### Generation
 
