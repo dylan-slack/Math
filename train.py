@@ -50,7 +50,7 @@ def train(train_data, test_data, args):
     training_args = transformers.TrainingArguments(
         output_dir="models",
         evaluation_strategy="steps",
-        eval_steps=1,
+        eval_steps=20,
         do_train=args.train,
         num_train_epochs=args.epochs,
         per_device_train_batch_size=args.train_batch_size,
